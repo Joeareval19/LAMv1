@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laminar Logistics</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="static/styles/landing.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="laminar">LAMINAR</span>
+            <span class="logistics">Logistics</span>
+        </a>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Product</a>
+            <a href="#">Solutions</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+        </nav>
+        <div class="actions">
+            <button id="signInButton" class="sign-in">Sign In</button>
+            <button id="signupButton" class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Streamline Your Shipping Today</h2>
+        <p>Experience the fastest, most reliable logistics solutions tailored to your business needs.</p>
+        <button class="cta-button">Get Started</button>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Effortless Shipping with Laminar Logistics</h1>
+            <p>We connect businesses with the best shipping solutions. From startups to enterprises, we’ve got you covered.</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+        <img src="{{ url_for('static', filename='images/discount.png') }}" alt="Discount png">
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Laminar Logistics?</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Fast Shipping</h3>
+                <p>Quick and reliable delivery solutions to keep your business moving forward.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Affordable Rates</h3>
+                <p>Competitive pricing with volume-based discounts tailored for your needs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>24/7 Customer Support</h3>
+                <p>Our dedicated team is here to help you around the clock.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Laminar Logistics made our shipping process seamless. Highly recommend!"</p>
+            <span>- Jane D., Operations Manager</span>
+        </div>
+        <div class="testimonial">
+            <p>"Their rates and service are unmatched. A true partner for our business."</p>
+            <span>- Michael S., CEO of Tech Ventures</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@laminarlogistics.com</p>
+                <p>Phone: +1 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <p>&copy; 2025 Laminar Logistics. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='scripts/landing.js') }}"></script>
+</body>
+</html>

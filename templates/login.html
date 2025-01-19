@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #0d1117; /* Dark theme */
+            font-family: Arial, sans-serif;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            position: relative; /* Allow fine-tuning of position */
+            top: -50px; /* Move the container 50px upward */
+        }
+
+        .login-container h2 {
+            margin-bottom: 16px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .login-container form {
+            padding: 0 10px; /* Reduces left and right padding of the form */
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 8px; /* Slightly reduces input box padding */
+            margin-bottom: 12px; /* Reduces spacing between inputs */
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            background-color: #0d1117;
+            color: #8c9196;
+            font-size: 0.9em; /* Slightly reduces text size */
+            box-sizing: border-box; /* Ensures proper alignment */
+        }
+
+        .login-container input:focus {
+            border-color: #58a6ff;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #701aa9;
+            color: #fff;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative; /* To position the shadow correctly */
+            box-shadow: 0 4px 10px rgba(112, 26, 169, 0.5); /* Initial shadow */
+            transition: background-color 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+        }
+
+        button:hover {
+            background-color: #701aa9;
+            box-shadow: 0 6px 15px rgba(112, 26, 169, 0.7); /* Enhanced shadow on hover */
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50px;
+            background: radial-gradient(rgba(112, 26, 169, 0.4), transparent);
+            z-index: -1; /* Keeps the shadow behind the button */
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease; /* Smooth fade-in effect */
+        }
+
+        button:hover::before {
+            opacity: 1; /* Show the radial gradient on hover */
+        }
+
+        .login-container .signup {
+            margin-top: 16px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .login-container .signup a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .login-container .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form action="/login" method="POST">
+            <label for="username">Username or email address</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Sign in</button>
+        </form>
+        <div class="signup">
+            <p>New to the site? <a href="/signup">Create an account</a></p>
+        </div>
+    </div>
+</body>
+</html>

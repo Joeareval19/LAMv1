@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    background-color: #0d1117; /* Dark theme */
+    font-family: Arial, sans-serif;
+    color: #c9d1d9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-container img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.signup-container h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Form Styles */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup-form label {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+.signup-form input:focus {
+    border-color: #58a6ff;
+    outline: none;
+}
+
+.error-message {
+    text-align: left;
+    font-size: 0.85rem;
+    color: #f85149; /* Error message color */
+    margin-top: -5px;
+}
+
+/* Buttons */
+.signup-form .next-button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #701aa9; /* Spotify green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form .next-button:hover {
+    background-color: #701aa9;
+    box-shadow: 0 4px 10px #701aa9;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #6e7681;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #30363d;
+    margin: 0 10px;
+}
+
+/* Social Buttons */
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #30363d;
+    border-radius: 24px;
+    background-color: transparent;
+    color: #c9d1d9;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.social-button:hover {
+    background-color: #161b22;
+}
